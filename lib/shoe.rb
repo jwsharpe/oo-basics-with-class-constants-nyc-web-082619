@@ -8,6 +8,7 @@ class Shoe
     if !BRANDS.include?(brand)
       BRANDS.push(brand)
     end
+    
   end
 
   def cobble
