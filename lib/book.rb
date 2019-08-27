@@ -7,6 +7,14 @@ class Book
   def initialize(title)
     @title = title
   end
+  
+  def genre=(genre)
+    @genre = genre
+    if !GENRES.include?(genre)
+      GENRES.push(genre)
+    end
+    
+  end
 
   def turn_page
     puts "Flipping the page...wow, you read fast!"
